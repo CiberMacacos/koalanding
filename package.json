@@ -24,5 +24,8 @@
     "vite": "^4.2.0"
   },
   "keywords": [],
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "swiper": "^9.2.0"
+  }
 }

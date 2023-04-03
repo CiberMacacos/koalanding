@@ -11,30 +11,100 @@
 
 <body>
   <!--Header-->
-  <header class="bg-[url('/assets/chuches/colorfulcandy.jpg')]  w-full h-72 bg-cover   bg-no-repeat py-5">
-    <nav class="flex flex-col relative text-center items-center mx-auto space-y-10">
-      <img class="w-80 bg-cover hover:scale-125" src="assets/logos/nombre-logo.png" alt="Foto header" />
-      <p class="text-xl font-  md:text-3xl">¿A dónde quieres viajar en un bocado?</p>
-      <a href="https://candykoaweb.netlify.app/index.html"><button md:text-2xl text-xl flex justify-center gap-32 text-center flex-col md:flex-row
-        class="bg-[#a6c1ee]  p-4  shadow-xl text-white px-5 py-3 rounded-full  hover:text-black text-l md:text-xl"> Pagina principal</button></a>
+  <header class="bg-[url('/assets/chuches/colorfulcandy.jpg')]  w-full h-72 mb-10 bg-cover bg-no-repeat">
+    <nav class="flex flex-col text-center justify-center items-center">
+      <img class="w-52 bg-cover" src="assets/logos/logo-letras.png" alt="Foto header" />
+      <a href="https://candykoaweb.netlify.app/index.html"><button class="bg-[#a6c1ee] shadow-xl text-white px-3 py-2 rounded-full  hover:text-black text-l md:text-l"> Pagina principal</button></a>
+      <!--<img class="w-full h-60" src="assets/landing/svg.png" alt="">-->
     </nav>
   </header>
 
   <main>
-    <!--Varias imagenes de gente disfrutando-->
-    <img class="flex justify-center items-end mx-auto md:py-2" src="assets/chuches/gente5.jpg" alt="chica-con-chuches" />
+    <!--<div class="flex flex-col justify-center items-center my-10 gap-5">
+      <p>
+        <h2 class="font-bold">¡Entra y haz tu día más dulce!</h2>
+      </p>
+      <a href="https://candykoaweb.netlify.app/index.html"><button class="bg-[#a6c1ee] shadow-xl text-white px-3 py-2 rounded-full  hover:text-black text-l md:text-l"> CandyKoa</button></a>
+    </div>-->
+    <!--Varias imagenes de gente disfrutando
+    <section class="slider">
+      <button onclick="prev()"><img src="assets/icon/left.png" alt="izquierda" id="left"></button>
+      <img data-id="1" id="photo" class="flex justify-center items-end mx-auto md:py-2 relative" src="assets/chuches/gente5.jpg" alt="chica-con-chuches" />
+      <img data-id="2" id="photo" class="flex justify-center items-end mx-auto md:py-2 relative hidden" src="assets/chuches/colorfulcandy.jpg" alt="chica-con-chuches" />
+      <img data-id="3" id="photo" class="flex justify-center items-end mx-auto md:py-2 relative hidden" src="assets/chuches/nubes.jpeg" alt="chica-con-chuches" />
+      <img data-id="4" id="photo" class="flex justify-center items-end mx-auto md:py-2 relative hidden" src="assets/chuches/oreos.jpg" alt="chica-con-chuches" />
+      <button onclick="next()"><img src="assets/icon/right.png" alt="derecha" id="right" /></button>
+    </section>
+-->
 
+
+<section class="my-20 mx-20 p-0">
+    <div class="relative">
+      <div class="h-[50vh] bg-gray-200">
+        <ul id="slider">
+          <li class="h-[50vh] relative">
+            <img class="h-full w-full object-cover object-center" src="assets/landing/chuches.jpg" alt="">
+            <div class="flex justify-center items-center absolute top-0 left-0 h-full w-full">
+              <h2 class="text-4xl text-center font-bold text-white">¿A dónde quieres viajar en un bocado?</h2>
+            </div>
+          </li>
+          <li class="h-[50vh] relative hidden">
+            <img class="h-full w-full object-cover object-bottom" src="assets/landing/japan.jpg" alt="">
+            <div class="flex justify-center items-center absolute top-0 left-0 h-full w-full">
+              <h2 class="text-4xl text-center font-bold text-white">Japón</h2>
+            </div>
+          </li>
+          <li class="h-[50vh] relative hidden">
+            <img class="h-full w-full object-cover object-center" src="assets/landing/ny.jpg" alt="">
+            <div class="flex justify-center items-center absolute top-0 left-0 h-full w-full">
+              <h2 class="text-4xl text-center font-bold text-white">Estados Unidos</h2>
+            </div>
+          </li>
+          <li class="h-[50vh] relative hidden">
+            <img class="h-full w-full object-cover object-center" src="assets/landing/mex.jpg" alt="">
+            <div class="flex justify-center items-center absolute top-0 left-0 h-full w-full">
+              <h2 class="text-4xl text-center font-bold rounded-full p-4 text-white">México</h2>
+            </div>
+          </li>
+          <li class="h-[50vh] relative hidden">
+            <img class="h-full w-full object-cover object-center" src="assets/landing/europe.jpg" alt="">
+            <div class="flex justify-center items-center absolute top-0 left-0 h-full w-full">
+              <h2 class="text-4xl text-center font-bold text-white">Europa</h2>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="absolute px-5 flex h-full w-full top-0 left-0">
+        <div class="my-auto w-full flex justify-between">
+        <button onclick="prev()" class="">
+          <img class="w-14 h-14 bg-gray-50 rounded-full" src="assets/icon/left.png" alt="">
+        </button>
+        <button onclick="next()" class="">
+          <img class="w-14 h-14 bg-gray-50 rounded-full" src="assets/icon/right.png" alt="">
+        </button>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+  <div class="grid grid-rows-2 mx-40 mb-20">
     <!--Foto, texto y banderas-->
-    <div class="flex  flex-col md:flex-row  bg-blue-100 w-auto h-auto justify-center  ">
+    <div class="flex flex-col md:flex-row  bg-blue-100 w-auto h-auto justify-center ">
         <img class="h-64 p-5" src="assets/productos/chewchew.jpeg" alt="chuches" />
       <div class="flex flex-col justify-center items-center relative p-5 ">
         <a class="text-l md:text-2xl text-center">Dulces de todas las partes del mundo. <br />¡Viaja a distintos países
           desde casa, con un solo mordisco!</a>
         <div class="flex justify-center gap-5 p-8 ">
-          <img class="w-14 hover:scale-125 transition duration-100 ease-in-out" src="assets/icon/japan_1.png" alt="bandera japon" />
-          <img class="w-14 hover:scale-125 transition duration-100 ease-in-out" src="assets/icon/europe.jpeg" alt="bandera europa" />
-          <img class="w-14 hover:scale-125 transition duration-100 ease-in-out" src="assets/icon/mexico.jpeg" alt="bandera mexico"/>
-          <img class="w-14 hover:scale-125 transition duration-100 ease-in-out" src="assets/icon/eeuu.jpeg" alt="bandera euu" />
+          <img class="w-12 h-10 hover:scale-125 transition duration-100 ease-in-out" src="assets/icon/japanflag.jpeg" alt="bandera japon" />
+          <img class="w-12 h-10 hover:scale-125 transition duration-100 ease-in-out" src="assets/icon/europe.jpeg" alt="bandera europa" />
+          <img class="w-12 h-10 hover:scale-125 transition duration-100 ease-in-out" src="assets/icon/mexico.jpeg" alt="bandera mexico"/>
+          <img class="w-12 h-10 hover:scale-125 transition duration-100 ease-in-out" src="assets/icon/eeuu.jpeg" alt="bandera euu" />
         </div>
       </div>
     </div>
@@ -51,11 +121,8 @@
             <img class="w-12  hover:scale-125 transition duration-100 ease-in-out" src="assets/icon/delivery-4.jpeg" alt="envio" />
           </div>
         </div>
-
         <img class="h-56 .w-5/6   object-cover" src="assets/chuches/halloween.jpeg" alt="chocolates  " />
-
       </div>
-
     </div>
     </div>
   </main>
@@ -71,6 +138,7 @@
     </div>
 
   </footer>
+  <script src="slider.js"></script>
 </body>
 
 </html>
